@@ -70,7 +70,7 @@
             <?php $i = 0;
                 foreach($r_list as $r) : 
                 $i++;
-                ?>
+            ?>
                 <?php if(!empty($r['pageUrl'])) : ?>
                     <li><a href="<?php echo 'company.php?c='.$r['pageUrl'].'#review-box'; ?>"><?php echo $r['name'] ?>の口コミ</a></li>
                 <?php endif; endforeach; ?>
