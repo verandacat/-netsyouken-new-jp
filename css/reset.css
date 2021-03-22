@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* 20201130 New Ranking Color */
+
+:root {
+    --black: #3f3e3b;
+    --dgreen: #003233;
+    --bgreen: #24cacd;
+    --lgreen: #ebf7f4;
+    --lyellow: #fdfbf2;
+    --yellow: #f0be0c;
+    --red: #fe5151;
+    --lgrey: #eeeeee;
+    --white: #ffffff;
+    --number1: rgb(228, 195, 50);
+    --number2: rgb(177, 175, 175);
+    --number3: #d47720;
+    --number4: rgb(157, 230, 157);
+    --number5: rgb(94, 216, 175);
+    --btnColor: linear-gradient(180deg, #fe5151 -15%, #fb0707 100%);
+    --head1Color: linear-gradient(180deg, #ffe37e 0%, #fdad35 100%);
+    --head2Color: linear-gradient(180deg, #e8e7e3 0%, #bebebe 100%);
+    --head3Color: linear-gradient(180deg, #ebba70 0%, #dd832e 100%);
+    --head4Color: linear-gradient(180deg, #80e2c9 21.35%, #26c2ad 76.56%);
+    --head5Color: linear-gradient(180deg, rgb(99, 216, 177) 21.35%, #19b4a0 76.56%);
+    --swiper-theme-color: var(--black) !important;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+
+
+/* v1.0 | 20080212 */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    color: #2a2a2a;
+    box-sizing: border-box;
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif !important;
+}
+
+input,
+textarea,
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input,
+textarea,
+button,
+select {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-padding: 4px;
+    -moz-padding: 4px;
+    -o-padding: 4px;
+    padding: 4px;
+    -webkit-background-color: #fff;
+    -moz-background-color: #fff;
+    -o-background-color: #fff;
+    background-color: #fff;
+}
+
+body {
+    line-height: 1.7;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+small {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #2a2a2a;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+
+/* remember to define focus styles! */
+
+:focus {
+    outline: 0;
+}
+
+
+/* remember to highlight inserts somehow! */
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+}
+
+
+/*********************************************************文字*/
+
+.fa,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Free"!important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bg-y {
+    background-color: #ffe566;
+}
+
+.y {
+    color: #ffe566;
+    font-weight: bold;
+}
+
+.red {
+    color: #ff0a0a;
+    font-weight: bold;
+}
+
+.newRed {
+    color: var(--red);
+    font-weight: bold;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif !important;
+}
+
+h2 {
+    font-family: 'Hannari', serif;
+}
