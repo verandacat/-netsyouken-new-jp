@@ -13,7 +13,7 @@
         <p>口座開設はネットで最短5分、無料です♪</p>
     </section>
     
-    <?php include 'rankings/ranking-america.php'; ?>
+    <?php include 'rankings/america.php'; ?>
 
     
 </main>

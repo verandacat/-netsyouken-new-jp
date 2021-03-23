@@ -4,7 +4,7 @@
 <div id="siteNavi"><a href="./">トップページ</a> ＞ 投資信託ランキング</div>
 <img src="./img/rank-invest-bn_v2.jpg" width="100%" alt="投資信託ランキング" />
 
-    <?php include 'rankings/ranking-invest.php'; ?>
+    <?php include 'rankings/investment-trust.php'; ?>
     <h3>投資信託とは？</h3>
     <section class="sub-text-box">
         <p>

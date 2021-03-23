@@ -21,9 +21,13 @@
 /*********************************************************main*/
 
 main {
-    padding: 0 5px;
+    padding: 0 10px;
     box-sizing: border-box;
-    border-top: 5px solid #0a575e;
+    /* border-top: 5px solid var(--yellow); */
+}
+
+main.sub-page {
+    font-size: 14px;
 }
 
 main.sub-page h1 {
@@ -118,22 +122,54 @@ main section.text-box {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 14px;
-    border: 1px solid #cccccc;
 }
 
 
 /********************ranking*/
 
 #ranking-area .ranking-title {
-    background-color: var(--lgrey);
+    padding: 4px 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#ranking-area .ranking-title:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    transform: translateY(-50%);
+    background: var(--lyellow);
+    z-index: 0;
+    border-bottom: 3px solid var(--yellow);
+    border-top: 3px solid var(--yellow);
 }
 
 #ranking-area .ranking-title h2 {
-    padding: 10px 0;
-    margin: 0;
-    font-size: 20px;
-    color: var(--dgreen);
+    padding: 8px;
+    margin: 8px auto 0;
+    font-size: 18px;
     line-height: 1.3;
+    background: #fff;
+    /* border: 3px solid var(--yellow); */
+    width: 82%;
+    text-align: center;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+    color: var(--ddgreen);
+}
+
+#ranking-area .ranking-title h2 span.titleSpan {
+    font-weight: bold;
+    background: var(--ddgreen);
+    color: white;
+    font-size: 12px;
+    padding: 2px 16px;
+    border-top: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
 }
 
 #ranking-area {
@@ -145,74 +181,39 @@ main section.text-box {
 }
 
 #ranking-area article {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     margin-bottom: 30px;
     padding-bottom: 20px;
+    border: 1px solid var(--ddgreen);
+    border-bottom: 4px solid var(--ddgreen);
+    border-top: 4px solid var(--yellow);
 }
 
-#ranking-area article[data-rank="1"] {
-    border: 3px solid var(--number1);
-}
-
-#ranking-area article[data-rank="2"] {
-    border: 3px solid var(--number2);
-}
-
-#ranking-area article[data-rank="3"] {
-    border: 3px solid var(--number3);
-}
-
-#ranking-area article[data-rank="4"] {
-    border: 3px solid var(--number4);
-}
-
-#ranking-area article[data-rank="5"] {
-    border: 3px solid var(--number5);
+#ranking-area article .r-title h3 {
+    background: var(--ddgreen);
 }
 
 #ranking-area article[data-rank="1"] .r-title h3 {
-    background-image: var(--head1Color);
+    border-top: 4px solid var(--head1Color);
+    border-bottom: 4px solid var(--head1Color);
 }
 
 #ranking-area article[data-rank="2"] .r-title h3 {
-    background-image: var(--head2Color);
+    border-top: 4px solid var(--head2Color);
+    border-bottom: 4px solid var(--head2Color);
 }
 
 #ranking-area article[data-rank="3"] .r-title h3 {
-    background-image: var(--head3Color);
+    border-top: 4px solid var(--head3Color);
+    border-bottom: 4px solid var(--head3Color);
 }
 
 #ranking-area article[data-rank="4"] .r-title h3 {
-    background-image: var(--head4Color);
-}
-
-#ranking-area article[data-rank="5"] .r-title h3 {
-    background-image: var(--head5Color);
+    border-top: 4px solid var(--head4Color);
+    border-bottom: 4px solid var(--head4Color);
 }
 
 #ranking-area article[data-rank="5"] .r-title h3 a {
     padding-left: 18px;
-}
-
-#ranking-area article[data-rank="1"] .r-title:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--yellow);
-    z-index: 10;
-}
-
-#ranking-area article[data-rank="1"] .r-title:before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--yellow);
-    z-index: 10;
 }
 
 
@@ -225,7 +226,7 @@ main section.text-box {
 .r-title .badge {
     display: inline-block;
     position: absolute;
-    top: -5px;
+    top: -1px;
     left: 0;
     z-index: 9;
     width: 55px;
@@ -247,19 +248,18 @@ main section.text-box {
     font-size: 20px;
     display: inline-block;
     padding-left: 64px;
-    color: var(--black);
+    color: var(--white);
     font-weight: bold;
-    text-shadow: 1px 1px 0px var(--lyellow);
 }
 
 .r-title .number-box {
-    top: 4px;
+    top: 50%;
+    transform: translateY(-50%);
     background: var(--white);
     font-weight: bold;
     position: absolute;
     right: 2px;
     padding: 3px 5px;
-    border: 1px solid var(--yellow);
     border-radius: 5px;
 }
 
@@ -317,7 +317,7 @@ main section.text-box {
 }
 
 .item-content-box {
-    padding: 5px 5px 0;
+    padding: 4px 4px 0;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -364,9 +364,9 @@ main section.text-box {
 
 .item-content-box .right table {
     table-layout: fixed;
-    margin: 0 5px;
+    margin: 0 4px 0 0;
     font-size: 9px;
-    width: 98%;
+    width: 100%;
 }
 
 .item-content-box .right small.line {
@@ -389,31 +389,39 @@ main section.text-box {
 /*おすすめポイント*/
 
 .po-list {
-    border-radius: 10px;
-    /* margin-top: 50px; */
-    width: 95%;
-    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+    width: 98%;
+    margin: 0 auto 4px;
+    border: 2px solid #eee;
+    border: 1px solid var(--yellow);
+    padding: 4px;
 }
 
 .po-list h4 {
-    font-size: 12px;
-    background-color: var(--red);
-    padding: 3px;
-    text-align: center;
-    color: white;
+    font-size: 14px;
+    padding: 4px 8px;
+    color: var(--ddgreen);
     min-height: 1.875em;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 3px solid;
+    background: var(--yellow);
+    border-bottom: 4px solid var(--ddgreen);
 }
 
-.po-list ul {
-    background: var(--lyellow);
+.po-list h4 i {
+    color: var(--ddgreen);
+    font-size: 16px;
+    margin-right: 8px;
+    border-right: 1px solid;
+    padding-right: 8px;
 }
 
 .po-list ul li {
-    padding: 5px 5px;
+    padding: 8px 4px;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.2;
-    border-bottom: 1px solid var(--yellow);
+    border-bottom: 1px solid #eee;
 }
 
 .po-list ul li:last-child {
@@ -424,37 +432,45 @@ main section.text-box {
 /*編集部から*/
 
 .comment {
-    background-color: #fff;
-    width: 95%;
-    margin: 30px auto 0;
-    padding: 20px 10px 10px;
+    width: 98%;
+    margin: 0px auto 4px;
+    padding: 0.2rem;
     position: relative;
-    border: 1px solid var(--dgreen);
+    /* border: 1px solid var(--head4Color); */
     border-radius: 5px;
 }
 
 .comment h4 {
-    font-size: 12px;
-    position: absolute;
-    left: 10px;
-    top: -14px;
-    padding: 3px 8px;
-    border-radius: 5px;
-    background-color: var(--dgreen);
+    font-size: 14px;
+    padding: 4px 8px;
+    background: var(--ddgreen);
     color: var(--white);
+    border-radius: 4px 4px 0 0;
+    border-bottom: 4px solid var(--yellow);
+}
+
+.comment h4 i {
+    color: var(--yellow);
+    font-size: 14px;
+    margin-right: 8px;
+    border-right: 1px solid;
+    padding-right: 8px;
 }
 
 .comment p {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    margin-top: 10px;
+    padding: 0 10px 10px;
+    color: var(--black);
 }
 
 .osubox {
     justify-content: center;
     padding: 5px;
     margin: 15px auto 0;
-    background: var(--lgreen);
+    background: var(--lyellow);
 }
 
 .osubox .osu-ctt {
@@ -464,12 +480,12 @@ main section.text-box {
     width: 95%;
     display: flex;
     align-items: center;
+    border-radius: 20px 0;
     justify-content: space-evenly;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .osubox div {
-    padding: 10px 0;
+    padding: 14px 14px 14px 10px;
     position: relative;
     margin-left: 5px;
     margin-right: 0;
@@ -478,6 +494,7 @@ main section.text-box {
 
 .osubox div h4 {
     color: var(--black);
+    border-bottom: 1px solid var(--lgrey);
     font-size: 14px;
     margin-bottom: 5px;
 }
@@ -490,16 +507,16 @@ main section.text-box {
 }
 
 .osubox img {
-    width: 15%;
+    width: 22%;
     margin-right: 5px;
 }
 
 .cam-box {
-    margin: 25px auto 0;
+    margin: 20px auto 0;
     background: url(./img/cam-bg-sp.png) no-repeat;
     background-size: contain;
-    width: 88%;
-    height: 98px;
+    width: 92%;
+    height: 113px;
     text-align: center;
     position: relative;
     padding: 3px;
@@ -507,7 +524,6 @@ main section.text-box {
 
 .cam-box h4 {
     color: var(--white);
-    background: var(--bgreen);
     width: 74%;
     position: absolute;
     left: 50%;
@@ -515,6 +531,9 @@ main section.text-box {
     transform: translateX(-50%);
     padding: 5px 10px;
     font-size: 14px;
+    background: url(./img/cam-title-bg.png) no-repeat;
+    background-size: contain;
+    background-position: 50%;
 }
 
 .cam-box h4:after {
@@ -531,8 +550,8 @@ main section.text-box {
 .cam-box .cam-ctt {
     font-size: 14px;
     font-weight: 700;
-    color: var(--dgreen);
-    height: 90%;
+    color: var(--black);
+    height: 80%;
     display: flex;
     justify-content: center;
     padding: 0 5px;
@@ -558,9 +577,9 @@ main section.text-box {
     display: block;
     background: var(--btnColor);
     border: 2px solid #f96e6e;
-    border-radius: 10px;
+    border-radius: 18px;
     width: 95%;
-    height: 55px;
+    height: 70px;
     margin: 0 auto;
     padding-left: 35px;
     text-align: center;
@@ -739,12 +758,13 @@ main section.text-box {
 .kuchikomi-box {
     margin-top: 30px;
     padding: 10px;
-    background: var(--lgrey);
+    background: var(--lgreen);
 }
 
-.kuchikomi-box .swiper-container {
+
+/* .kuchikomi-box .swiper-container {
     border: 1px solid var(--black);
-}
+} */
 
 .kuchikomi-box .swiper-container .man,
 .kuchikomi-box .swiper-container .woman {
@@ -759,7 +779,7 @@ main section.text-box {
     position: absolute;
     width: 30px;
     height: 40px;
-    right: 90px;
+    right: 0;
     top: -5px;
     background-repeat: no-repeat;
 }
@@ -771,22 +791,28 @@ main section.text-box {
     position: absolute;
     width: 30px;
     height: 40px;
-    right: 90px;
+    right: 0;
     top: -5px;
     background-repeat: no-repeat;
 }
 
 .kuchikomi-box h4 {
-    color: var(--black);
-    /* padding: 20px 0; */
+    background: var(--black);
     font-size: 16px;
+    color: white;
+    padding: 4px 8px;
+}
+
+.kuchikomi-box h4 i {
+    margin-left: 8px;
+    color: var(--white);
+    font-size: 20px;
 }
 
 .kuchikomi-box .swiper-container {
     background: var(--white);
     padding: 0 10px;
     width: 100%;
-    height: 100%;
 }
 
 .kuchikomi-box .swiper-container .swiper-slide {
@@ -797,20 +823,26 @@ main section.text-box {
 }
 
 .kuchikomi-box .re-content div {
-    padding: 0 5px 30px;
+    padding: 0.1rem 1rem 2rem;
 }
 
 .kuchikomi-box .re-content img {
-    top: 12px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .kuchikomi-box .swiper-slide.re-content p:first-child {
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .kuchikomi-box .swiper-slide.re-content p:first-child .small {
     font-size: 9px;
     background: var(--lgrey);
+    padding: 2px;
+    margin-left: 4px;
 }
 
 .kuchikomi-box .swiper-slide.re-content p:nth-child(2) {
@@ -875,6 +907,14 @@ main section.text-box {
     left: 0;
     background-image: url(./img/slider-arrow-left.svg);
     /* transform: scale(-1, 1); */
+}
+
+.swiper-pagination-bullet {
+    margin: 0 2px!important;
+    width: 8px!important;
+    height: 4px!important;
+    border-radius: 0!important;
+    background: var(--bgreen)!important;
 }
 
 
@@ -996,6 +1036,12 @@ main section.text-box {
     border: none;
 }
 
+#content-area h2 {
+    color: var(--ddgreen);
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
 #content-area article.point-article h2 {
     color: var(--dgreen);
 }
@@ -1023,7 +1069,7 @@ main section.text-box {
 .pickupitem p:first-child {
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 5px 70px;
+    padding: 5px 60px;
 }
 
 .pickupitem p:nth-child(2) {
@@ -1081,14 +1127,9 @@ li.point5 {
     background-image: url(img/point5.png);
 }
 
-.last-text {
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-}
-
 .last-text a {
     font-weight: bold;
-    color: #019da0;
+    color: var(--dgreen);
     text-decoration: underline;
 }
 
@@ -1107,7 +1148,7 @@ li.point5 {
 }
 
 #content-area article.last-article h2 {
-    color: var(--dgreen);
+    color: var(--ddgreen);
     margin: 0;
     padding: 10px 0;
     font-size: 1.2rem;
@@ -1191,15 +1232,13 @@ li.point5 {
 
 .re-content img {
     display: block;
-    background: #fff;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
     position: absolute;
-    right: 8px;
-    top: 23px;
+    right: 30px;
+    top: 50%;
     z-index: 1;
-    width: 73px;
+    width: 58px;
 }
 
 .re-content p:first-child img:after {
@@ -1252,7 +1291,6 @@ nav img {
 
 nav section {
     margin-bottom: 20px;
-    border: 1px solid #ddd;
 }
 
 nav section div h2 {
@@ -1292,7 +1330,7 @@ nav section ul li {
 
 nav section ul li a {
     display: block;
-    padding: 13px;
+    padding: 8px;
     font-size: 0.8rem;
     position: relative;
 }
@@ -1424,11 +1462,15 @@ table.rank-table {
 }
 
 table.rank-table th {
-    padding: 2px 0 !important;
+    height: 40px;
+    padding: 4px 1px !important;
+    background: var(--lgrey);
 }
 
 table.rank-table td {
-    padding: 5px 0px !important;
+    height: 40px;
+    padding: 4px 0 !important;
+    font-size: 11px;
 }
 
 table.rank-table th,
@@ -1439,13 +1481,14 @@ table.rank-table td {
 }
 
 table.rank-table.table-second {
-    width: 95%;
-    margin: 5px auto 0;
+    width: 98%;
+    margin: 0 auto 4px;
 }
 
 table.rank-table.table-second th {
-    font-size: 9px;
+    font-size: 11px;
     padding: 0;
+    background-color: var (--lgrey);
 }
 
 table.rank-table.table-second td p {
@@ -1476,14 +1519,19 @@ table.small-table {
 
 table.small-table th {
     font-size: 1rem;
-    padding: 0!important;
     vertical-align: middle;
+    line-height: 1.2;
+    padding: 18px 4px!important;
+}
+
+table.small-table th p {
+    color: white;
 }
 
 table.small-table th,
 table.small-table td {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 table.small-table td {
@@ -1509,8 +1557,8 @@ table.small-table td a {
 
 table.small-table td a.t-btn {
     border-radius: 5px;
-    background-color: #f28a9e;
-    box-shadow: 0 4px 0 #dc6a82;
+    background: var(--btnColor);
+    box-shadow: 0 4px 0 #f96e6e;
     display: block;
     width: 98%;
     height: auto;

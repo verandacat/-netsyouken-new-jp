@@ -11,7 +11,7 @@
         </p>
     </section>
 
-    <?php include 'rankings/ranking-all.php'; ?>
+    <?php include 'rankings/ranking.php'; ?>
 
 </main>
 

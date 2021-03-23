@@ -137,7 +137,7 @@ $names = array('sbi', 'matsui', 'rakuten', 'dmm', 'sbimobi', 'livestar', 'line',
         </div>
        
         <div class="po-list">
-            <h4><?php echo $reslutArray[$c]['name'] ?>のおすすめポイント</h4>
+            <h4><i class="fas fa-hand-point-right"></i><?php echo $reslutArray[$c]['name'] ?>のおすすめポイント</h4>
 
             <ul>
                 <li><?php echo $reslutArray[$c]['point1'] ?>
@@ -257,7 +257,7 @@ $names = array('sbi', 'matsui', 'rakuten', 'dmm', 'sbimobi', 'livestar', 'line',
     
     <section id="review-box">
         <article class="matsui-r" id="review">
-            <h3><?php echo $reslutArray[$c]['name'] ?>最新の口コミ</h3>
+            <h3><?php echo $reslutArray[$c]['name'] ?>最新の口コミ<i class="fas fa-comments"></i></h3>
             <?php
                     $reviewLoop = $reslutArray[$c]['reviews'];
                     foreach ($reviewLoop as $v => $key) {

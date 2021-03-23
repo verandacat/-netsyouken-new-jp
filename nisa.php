@@ -15,7 +15,7 @@
         <p class="nisa-last-txt">株初心者におすすめなのがNISA口座！</p>
     </section>
     
-    <?php include 'rankings/ranking-nisa.php'; ?>
+    <?php include 'rankings/nisa.php'; ?>
 
     <h3>NISAとは</h3>
     <section class="sub-text-box">

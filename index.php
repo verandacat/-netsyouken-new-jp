@@ -2,19 +2,29 @@
 
 <main>
 
-    <h1><img src="./img/fv-jp.jpg" alt="ネット証券ランキング" /></h1>
+    <h1>
+        <picture>
+            <source type="image/webp" srcset="./img/fv-jp.webp">
+            <img src="./img/fv-jp.jpg" alt="ネット証券ランキング" />
+        </picture>
+    </h1>
+    <div style="margin-top:20px;">
+            <?php include 'form.php'; ?>
+        </div>
     <section class="text-box">
-        <p><strong style="color:red">「初心者におすすめのネット証券は？」<br>「手数料が安いネット証券はどこ？」<br>「人気の証券会社が知りたい！」</strong></p>
+        <article>
+        <p><strong class="red">「初心者におすすめのネット証券は？」<br>「手数料が安いネット証券はどこ？」<br>「人気の証券会社が知りたい！」</strong></p>
         <br>
         <p>ネット証券は、<strong>圧倒的な手数料の安さ、便利で優秀な取引ツールが利用できる、PC・スマホでいつでも自分の好きなタイミングで売り買いの注文が出来る</strong>のが大きな魅力です。総合証券会社のように営業される心配も一切ありません。
         </p>
         <br>
-        <p>当サイトでは<span class="bg-y red under">おすすめの人気ネット証券会社をランキングでご紹介</span>していますので、ぜひ優良ネット証券を選んで投資ライフを充実させてくださいね！</p>
+        <p>当サイトでは<span class="bg-y red">おすすめの人気ネット証券会社をランキングでご紹介</span>していますので、ぜひ優良ネット証券を選んで投資ライフを充実させてくださいね！</p>
+        </article>
     </section>
 
     <?php include 'rankings/ranking-all.php'; ?>
 
-    <section id="pickup">
+    <!-- <section id="pickup">
         <?php if(is_mobile()) : ?>
         <h2><?php echo date('Y'); ?>年<?php echo date('n'); ?>月の<span class="red">注目ピックアップ証券</span>！</h2>
         <?php else : ?>
@@ -62,12 +72,16 @@
             </div>
         </article>
 
-    </section>
+    </section> -->
 
 
     <section id="content-area">
 
+        <?php if(!is_mobile()) : ?>
         <h2>絶対に失敗しないネット証券の選び方！</h2>
+        <?php else : ?>
+        <h2>絶対に失敗しない<br>ネット証券の選び方！</h2>
+        <?php endif; ?>
 
         <article class="point-article">
             <img src="./img/netshouken2.jpg" alt="ネット証券ランキング">
@@ -82,7 +96,7 @@
             </ul>
 
             <div class="pickupitem">
-                <p class="bg-y">全ての条件を満たしたNo.1ネット証券会社は…</p>
+                <p><span style="background: #ebdba1">全ての条件を満たしたNo.1ネット証券会社</span>は…</p>
                 <p>↓↓↓↓↓</p>
                 <strong>SBI証券！</strong>
             </div>
@@ -106,16 +120,16 @@
                 <colgroup span="4" style="width:25%;">
                 <tbody>
                     <tr>
-                        <th style="background-color: #D7FFFF">
+                        <th style="background-color: var(--dgreen);">
                             <p>手数料が安い</p>
                         </th>
-                        <th style="background-color: #E2EED2">
+                        <th style="background-color: var(--ddgreen);">
                             <p>IPO株の引受社数が多い</p>
                         </th>
-                        <th style="background-color: #FFFDD7">
+                        <th style="background-color: var(--dgreen);">
                             <p>NISA口座におすすめ</p>
                         </th>
-                        <th style="background-color: #FFD7FD">
+                        <th style="background-color: var(--ddgreen);">
                             <p>初心者におすすめ</p>
                         </th>
                     </tr>
@@ -193,9 +207,7 @@
                 </p>
             </div>
         </article>
-        <div style="margin-top:20px;">
-            <?php include 'form.php'; ?>
-        </div>
+        
     </section>
 
 </main>

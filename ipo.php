@@ -4,7 +4,7 @@
     <div id="siteNavi"><a href="./">トップページ</a> ＞ IPOランキング</div>
     <img src="./img/rank-ipo-bn.jpg" width="100%" alt="IPOランキング" />
 
-    <?php include 'rankings/ranking-ipo.php'; ?>
+    <?php include 'rankings/ipo.php'; ?>
 
     <h3>IPO（株）とは？</h3>
     <section class="sub-text-box">

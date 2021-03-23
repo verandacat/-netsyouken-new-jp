@@ -19,7 +19,7 @@
         </p>
     </section>
 
-    <?php include 'rankings/ranking-beginner.php'; ?>
+    <?php include 'rankings/beginner.php'; ?>
 
 </main>
 

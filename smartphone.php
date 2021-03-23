@@ -21,7 +21,7 @@
         </p>
     </section>
 
-    <?php include 'rankings/ranking-smart.php'; ?>
+    <?php include 'rankings/smartphone.php'; ?>
 
 
 

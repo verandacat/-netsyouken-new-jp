@@ -15,7 +15,7 @@
         <p class="nisa-last-txt">投資初心者につみたてNISAは最適！</p>
     </section>
 
-    <?php include 'ranking-tsumitate.php'; ?>
+    <?php include 'rankings/tsumitate.php'; ?>
 
     <h3>NISAとは</h3>
     <section class="sub-text-box">

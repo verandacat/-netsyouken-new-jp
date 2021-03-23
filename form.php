@@ -32,28 +32,30 @@
     }
     .f-title {
       font-weight: bold;
-      background-color: #f4fbfb;
+      background-color: var(--lyellow);
     }
     @media (max-width: 768px) {
-      .buhin label {
-      font-size: 12px!important;
+        .buhin label {
+        font-size: 12px!important;
+      }
+      .buhin tr:first-child td .f-title {
+        font-size: 12px!important;
+        min-height: 45px;
+        display: flex;
+        padding: 2px;
+        line-height: 1.2;
+      }
+        .buhin tr:first-child td select {
+          font-size: 12px;
+      }
+      #form .buhin td {
+        padding: 5px 10px;
+      }
+      th {
+        padding: 3px 5px!important;
+      }
     }
-    .buhin tr:first-child td .f-title {
-      font-size: 12px!important;
-      min-height: 45px;
-      display: block;
-      padding: 2px;
-    }
-      .buhin tr:first-child td select {
-        font-size: 12px;
-    }
-    #form .buhin td {
-      padding: 5px 10px;
-    }
-    th {
-      padding: 3px 5px!important;
-    }
-  }
+    
   </style>
 	<table class="buhin">
 	  <tbody>

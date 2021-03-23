@@ -4,25 +4,26 @@
 
 :root {
     --black: #3f3e3b;
-    --dgreen: #003233;
-    --bgreen: #24cacd;
-    --lgreen: #ebf7f4;
-    --lyellow: #fdfbf2;
-    --yellow: #f0be0c;
-    --red: #fe5151;
+    --ddgreen: #0f3c3c;
+    --dgreen: #34a3a3;
+    --yellow: rgb(226, 215, 87);
+    --bgreen: darkcyan;
+    --lgreen: #eaf1f0;
+    --lyellow: #f9f8ee;
+    --red: #e95353;
     --lgrey: #eeeeee;
     --white: #ffffff;
-    --number1: rgb(228, 195, 50);
-    --number2: rgb(177, 175, 175);
-    --number3: #d47720;
-    --number4: rgb(157, 230, 157);
-    --number5: rgb(94, 216, 175);
+    --number1: #ebdba1;
+    --number2: #e8e7e3;
+    --number3: #dab18b;
+    --number4: #dab18b;
+    --number5: rgb(153, 221, 198);
     --btnColor: linear-gradient(180deg, #fe5151 -15%, #fb0707 100%);
-    --head1Color: linear-gradient(180deg, #ffe37e 0%, #fdad35 100%);
-    --head2Color: linear-gradient(180deg, #e8e7e3 0%, #bebebe 100%);
-    --head3Color: linear-gradient(180deg, #ebba70 0%, #dd832e 100%);
-    --head4Color: linear-gradient(180deg, #80e2c9 21.35%, #26c2ad 76.56%);
-    --head5Color: linear-gradient(180deg, rgb(99, 216, 177) 21.35%, #19b4a0 76.56%);
+    --head1Color: #ebdba1;
+    --head2Color: #e8e7e3;
+    --head3Color: #dab18b;
+    --head4Color: #9bd1c4;
+    --head5Color: rgb(153, 221, 198);
     --swiper-theme-color: var(--black) !important;
 }
 
@@ -207,7 +208,7 @@ table {
 }
 
 .bg-y {
-    background-color: #ffe566;
+    background-image: linear-gradient(180deg, transparent 70%, #f1e39b 30%);
 }
 
 .y {
@@ -216,7 +217,7 @@ table {
 }
 
 .red {
-    color: #ff0a0a;
+    color: var(--red);
     font-weight: bold;
 }
 

@@ -15,7 +15,7 @@
         </p>    
     </section>
 
-    <?php include 'rankings/ranking-fee.php'; ?>
+    <?php include 'rankings/fee.php'; ?>
 
 </main>
 

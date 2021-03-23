@@ -18,7 +18,7 @@
         </p>
     </section>
 
-    <?php include 'rankings/ranking-foreign.php'; ?>
+    <?php include 'rankings/foreign.php'; ?>
 
 </main>
 
