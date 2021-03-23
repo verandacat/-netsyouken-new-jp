@@ -6,7 +6,7 @@
 <script>
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
-    spaceBetween: 10,
+    spaceBetween: 0,
     loop: true,
 
     // If we need pagination

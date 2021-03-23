@@ -27,13 +27,15 @@ $r_list = array(
         "rankNisa" => 1,
         "rankInvest" => 1,
         "rankAme" => 1,
-        "rankSp" => '',
+        "rankSp" => 2,
         "rankForeign" => 1,
 
         // ポイント
         "point1" => '550万口座突破の<span class="red">超人気ネット証券口座！</span>',
         "point2" => '<span class="red bg-y">業界最安水準の手数料</span>の安さ！',
         "point3" => '国内株式個人売買代金シェアNo.1！',
+        
+       
         "nisa_point1" => 'NISA<span class="red">口座開設数No.1</span>！',
         "nisa_point2" => 'NISA口座の<span class="bg-y red">国内株式売買手数料0円</span>！の安さ！',
         "nisa_point3" => '100円から積立がスタートできる！',
@@ -394,95 +396,95 @@ $r_list = array(
         "campaign" => '口座開設完了で1ヶ月間手数料無料＆抽選で2,000円キャッシュバック！',
     ), 
 
-    'sbimobi' => array(
+    // 'sbimobi' => array(
 
-        "name" => 'SBIネオモバイル証券',
-        "pageUrl" => 'sbimobi',
+    //     "name" => 'SBIネオモバイル証券',
+    //     "pageUrl" => 'sbimobi',
 
-        "url" => './link/sbimobi.php',
-        "image" => './img/250_250.png',
-        "imageIpo" => '',
-        "imageNisa" => '',
-        "imageAme" => '',
+    //     "url" => './link/sbimobi.php',
+    //     "image" => './img/250_250.png',
+    //     "imageIpo" => '',
+    //     "imageNisa" => '',
+    //     "imageAme" => '',
 
-        "btnLogo" => './img/sbimobi-logo.png',
-        "sougou" => 85,
-        "sougou_img" => './img/review_4.gif',
+    //     "btnLogo" => './img/sbimobi-logo.png',
+    //     "sougou" => 85,
+    //     "sougou_img" => './img/review_4.gif',
 
-        // ランキング順位
-        "rankAll" => 5,
-        "rankBeg" => 4,
-        "rankFee" => 5,
-        "rankIpo" => 6,
-        "rankNisa" => '',
-        "rankInvest" => '',
-        "rankAme" => '',
-        "rankSp" => 2,
-        "rankForeign" => '',
+    //     // ランキング順位
+    //     "rankAll" => 5,
+    //     "rankBeg" => 4,
+    //     "rankFee" => 5,
+    //     "rankIpo" => 6,
+    //     "rankNisa" => '',
+    //     "rankInvest" => '',
+    //     "rankAme" => '',
+    //     "rankSp" => 2,
+    //     "rankForeign" => '',
 
-        // ポイント
-        "point1" => '日本初！Tポイントを使って株が買える！',
-        "point2" => '数百円で有名企業の株主になれるチャンス！',
-        "point3" => '',
-        "nisa_point1" => '',
-        "nisa_point2" => '',
-        "nisa_point3" => '',
-        "invest_point1" => '',
-        "invest_point2" => '',
-        "invest_point3" => '',
-        "ame_point1" => '',
-        "ame_point2" => '',
+    //     // ポイント
+    //     "point1" => '日本初！Tポイントを使って株が買える！',
+    //     "point2" => '数百円で有名企業の株主になれるチャンス！',
+    //     "point3" => '',
+    //     "nisa_point1" => '',
+    //     "nisa_point2" => '',
+    //     "nisa_point3" => '',
+    //     "invest_point1" => '',
+    //     "invest_point2" => '',
+    //     "invest_point3" => '',
+    //     "ame_point1" => '',
+    //     "ame_point2" => '',
 
-        "osusume_point1" => '・株の初心者の人',
-        "osusume_point2" => '・Tポイントで株を買いたい人',
+    //     "osusume_point1" => '・株の初心者の人',
+    //     "osusume_point2" => '・Tポイントで株を買いたい人',
 
-        // コメント
-        // Comment TOP
-        "comment_top" => '',
-        // Comment 初心者
-        "comment_fee" => '1注文の現物取引手数料が50円～、信用取引はキャンペーン期間中0円と手数料の安さが魅力のネット証券です。',
-        // Comment IPO
-        "comment_ipo" => '',
-        // Comment NISA
-        "comment_nisa" => '',
-        // Comment 投資信託
-        "comment_invest" => '',
-        // Comment 米国株
-        "comment_ame" => '',
+    //     // コメント
+    //     // Comment TOP
+    //     "comment_top" => '',
+    //     // Comment 初心者
+    //     "comment_fee" => '1注文の現物取引手数料が50円～、信用取引はキャンペーン期間中0円と手数料の安さが魅力のネット証券です。',
+    //     // Comment IPO
+    //     "comment_ipo" => '',
+    //     // Comment NISA
+    //     "comment_nisa" => '',
+    //     // Comment 投資信託
+    //     "comment_invest" => '',
+    //     // Comment 米国株
+    //     "comment_ame" => '',
         
-        // 表
-        "tesuryou_1_1" => '200円',
-        "tesuryou_1_2" => '200円',
-        "tesuryou_1_3" => '200円',
-        "tesuryou_1_4" => '1000円',
+    //     // 表
+    //     "tesuryou_1_1" => '200円',
+    //     "tesuryou_1_2" => '200円',
+    //     "tesuryou_1_3" => '200円',
+    //     "tesuryou_1_4" => '1000円',
 
-        "tesuryou_2_1" => '-',
-        "tesuryou_2_2" => '-',
-        "tesuryou_2_3" => '-',
-        "tesuryou_2_4" => '-',
+    //     "tesuryou_2_1" => '-',
+    //     "tesuryou_2_2" => '-',
+    //     "tesuryou_2_3" => '-',
+    //     "tesuryou_2_4" => '-',
 
-        // 米国株表
-        "ameTes_1_1" => '',
-        "ameTes_1_2" => '',
-        "ameTes_1_3" => '',
-        "ameTes_1_4" => '',
+    //     // 米国株表
+    //     "ameTes_1_1" => '',
+    //     "ameTes_1_2" => '',
+    //     "ameTes_1_3" => '',
+    //     "ameTes_1_4" => '',
 
-        "ipo" => '<img src="./img/score_i_02.png">',
-        "nisa" => '<img src="./img/score_i_04.png">',
-        "shintaku" => '<img src="./img/score_i_04.png">',
-        "ryou" => '<img src="./img/score_i_04.png">',
-        "torihiki" => '<img src="./img/score_i_04.png">',
-        "tangen" => '<img src="./img/score_i_02.png">',
+    //     "ipo" => '<img src="./img/score_i_02.png">',
+    //     "nisa" => '<img src="./img/score_i_04.png">',
+    //     "shintaku" => '<img src="./img/score_i_04.png">',
+    //     "ryou" => '<img src="./img/score_i_04.png">',
+    //     "torihiki" => '<img src="./img/score_i_04.png">',
+    //     "tangen" => '<img src="./img/score_i_02.png">',
 
-        "yakkan" => '<img src="./img/score_i_04.png">',
-        "gaikoku" => '<img src="./img/score_i_04.png">',
-        "tool" => '<img src="./img/score_i_02.png">',
-        "syouhinsu" => '<img src="./img/score_i_02.png">',
-        "smart" => '<img src="./img/score_i_01.png">',
-        "price" => '<img src="./img/score_i_02.png">',
+    //     "yakkan" => '<img src="./img/score_i_04.png">',
+    //     "gaikoku" => '<img src="./img/score_i_04.png">',
+    //     "tool" => '<img src="./img/score_i_02.png">',
+    //     "syouhinsu" => '<img src="./img/score_i_02.png">',
+    //     "smart" => '<img src="./img/score_i_01.png">',
+    //     "price" => '<img src="./img/score_i_02.png">',
 
-        "campaign" => '',
-    ), 
+    //     "campaign" => '',
+    // ), 
 
     'livestar' => array(
 
@@ -583,12 +585,12 @@ $r_list = array(
         "imageAme" => '',
 
         "btnLogo" => './img/line-logo.png',
-        "sougou" => 80,
+        "sougou" => 85,
         "sougou_img" => './img/review_35.gif',
 
         // ランキング順位
-        "rankAll" => 7,
-        "rankBeg" => 5,
+        "rankAll" => 5,
+        "rankBeg" => 4,
         "rankFee" => '',
         "rankIpo" => '',
         "rankNisa" => '',
@@ -748,7 +750,7 @@ $r_list = array(
         "gaikoku" => '<img src="./img/score_i_02.png">',
         "tool" => '<img src="./img/score_i_02.png">',
         "syouhinsu" => '<img src="./img/score_i_02.png">',
-        "smart" => '<img src="./img/score_i_01.png">',
+        "smart" => '<img src="./img/score_i_02.png">',
         "price" => '<img src="./img/score_i_02.png">',
 
         "campaign" => '今なら口座開設で最高3株分の購入代金がもらえちゃう！',
@@ -790,7 +792,7 @@ $r_list = array(
         "invest_point1" => '',
         "invest_point2" => '',
         "invest_point3" => '',
-        "ame_point1" => '米国株取扱銘柄数は主要ネット証券<span class="red bg-y">No.1</span>！>',
+        "ame_point1" => '米国株取扱銘柄数は主要ネット証券<span class="red bg-y">No.1</span>！',
         "ame_point2" => 'ネット証券唯一の<span class="red">米国株専用スマホアプリ有り！</span>',
         "osusume_point1" => '・投資情報にこだわりたい人',
         "osusume_point2" => '・自分に合った投資商品を見つけたい人',
@@ -962,7 +964,7 @@ $r_list = array(
     'kabucom' => array(
 
         "name" => 'auカブコム証券',
-        "pageUrl" => '.kabucom',
+        "pageUrl" => 'kabucom',
         "url" => './link/kabudotcom.php',
         "image" => './img/kabucom200x200.jpg',
         "imageIpo" => '',
@@ -1004,7 +1006,15 @@ $r_list = array(
         // Comment 初心者
         "comment_fee" => '',
         // Comment IPO
-        "comment_ipo" => '',
+        "comment_ipo" => '最後におすすめするのは、auカブコム証券です。auカブコム証券の特徴は、まず取り扱うIPO株のほぼ100%が完全平等抽選であることが挙げられます。
+        <br><br>
+        「ほぼ」と記載しているのは、数％はその他の方法が採用されているためですが、それでもほぼ全てが完全平等抽選なのは大きな魅力です。
+        <br><br>
+        また、auカブコム証券は株式売買手数料が安いことが特徴です。例えば、インターネット上で取引を行う場合、10万円までの売買であれば手数料が90円しかかかりません。
+        <br><br>
+        そのほか、取り扱うIPO銘柄数も業界では多いほうで、この10年間で平均して20銘柄ほどを安定して取り扱っています。
+        <br><br>
+        実際、今年に入ってからも、「あさくま」、「ヤシマキザイ」、「Sansan」といったIPO株を取り扱っています。安定して取引が見込める点が、auカブコム証券の魅力だと言えるでしょう。',
         // Comment NISA
         "comment_nisa" => 'auカブコム証券は三菱UFJフィナンシャルグループのネット証券です。
         <br><br>
@@ -1052,7 +1062,7 @@ $r_list = array(
 
     'gmo' => array(
 
-        "name" => 'auカブコム証券',
+        "name" => 'GMOクリック証券',
         "pageUrl" => 'gmo',
         "url" => './link/gmo.php',
         "image" => './img/gmo200_200.gif',
@@ -1494,14 +1504,14 @@ $r_list = array(
         "imageNisa" => '',
         "imageAme" => '',
 
-        "btnLogo" => './img/paypay-logo.png',
+        "btnLogo" => './img/paypay-logo.jpg',
         "sougou" => 76,
         "sougou_img" => './img/review_35.gif',
 
         // ランキング順位
         "rankAll" => '',
         "rankBeg" => '',
-        "rankFee" => '',
+        "rankFee" => 5,
         "rankIpo" => '',
         "rankNisa" => '',
         "rankInvest" => '',
