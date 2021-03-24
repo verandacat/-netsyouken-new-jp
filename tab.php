@@ -34,32 +34,32 @@ $imaurl = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
             $i++;
             include ('inc/syutoku_v.php');
             
-$html = <<<EOD
+            $html = <<<EOD
 
-     <tr>
-      <td class="item-d1">
-        <a href={$url} target=_blank class="prrrr"><img src={$img1}>{$name}</a>
-      </td>
-      <td class="deka"><span class="nosp">{$sougou_gazo}<br></span>{$sougou}点</td>
-      <td><span class="hide">{$koda2}</span>{$koda2_txt}{$koda_txt}</td>
-      <td><span class="hide">{$koda1}</span>{$koda1_txt}{$koda_txt}</td>
-      <td><span class="hide">{$koda5}</span>{$koda5_txt}{$koda_txt}</td>
-      <td><span class="hide">{$tousi4}</span>{$tousi4_txt}</td>
-      <td><span class="hide">{$tousi8}</span>{$tousi8_txt}</td>
-      <td><span class="hide">{$tousi3}</span>{$tousi3_txt}</td>
-      <td class="setumei">{$point}</td>
-      <td class="setumei">{$canp}</td>
-      <td class="row2"><a href={$url} target=_blank class="kousiki_btn prrrr">公式<span class="nopc">サイト</span></a></td>
-    </tr>
-    
-EOD;
+                <tr>
+                  <td class="item-d1">
+                    <a href={$url} target=_blank class="prrrr"><img src={$img1}>{$name}</a>
+                  </td>
+                  <td class="deka"><span class="nosp">{$sougou_gazo}<br></span>{$sougou}点</td>
+                  <td><span class="hide">{$koda2}</span>{$koda2_txt}{$koda_txt}</td>
+                  <td><span class="hide">{$koda1}</span>{$koda1_txt}{$koda_txt}</td>
+                  <td><span class="hide">{$koda5}</span>{$koda5_txt}{$koda_txt}</td>
+                  <td><span class="hide">{$tousi4}</span>{$tousi4_txt}</td>
+                  <td><span class="hide">{$tousi8}</span>{$tousi8_txt}</td>
+                  <td><span class="hide">{$tousi3}</span>{$tousi3_txt}</td>
+                  <td class="setumei">{$point}</td>
+                  <td class="setumei">{$canp}</td>
+                  <td class="row2"><a href={$url} target=_blank class="kousiki_btn prrrr">公式<span class="nopc">サイト</span></a></td>
+                </tr>
+                
+            EOD;
 
-			  if (strpos($imaurl, 'result') !== false) {
-                include ('search.php');
-              }else{
-                echo $html;
-              }
-           	}?>
+            if (strpos($imaurl, 'result') !== false) {
+                    include ('search.php');
+                  }else{
+                    echo $html;
+                  }
+                }?>
             </tbody>
           </table>
          </div>
@@ -98,18 +98,18 @@ EOD;
           </thead>
           <tbody>
           <?php
-           include ('/inc/company.php');
-           $i=0;
+           include ('inc/company.php');
+           $k=0;
           
            foreach($list as $v){
-            $i++;
-            include ('/inc/syutoku_v.php');
+            $k++;
+            include ('inc/syutoku_v.php');
             
-            if($i == 7) {
+            if($name == 'LINE証券') {
               $td = "<td class='item-d' rowspan='2' style='padding: 20px 5px'>";
               $kome = "<tr><td colspan='15' style='text-align:left; position: relative;
               z-index: 0; padding:0 2px!important;'>※同一日に同一注文で複数の約定となった場合は、約定代金を合算し手数料を計算します。</td></tr>";
-            }elseif($i > 7 || $i < 7) {
+            }else {
               $td = "<td class='item-d'>";
               unset($kome);
             }
@@ -143,7 +143,7 @@ EOD;
       
       
     		 if (strpos($imaurl, 'result') !== false) {
-                include ('/search.php');
+                include ('search.php');
               }else{
                 echo $html;
               }
@@ -179,12 +179,12 @@ EOD;
           </thead>
           <tbody>
           <?php
-           include ('/inc/company.php');
-           $i=0;
+           include ('inc/company.php');
+           $s=0;
           
            foreach($list as $v){
-            $i++;
-            include ('/inc/syutoku_v.php');
+            $s++;
+            include ('inc/syutoku_v.php');
     
             
 $html = <<<EOD
@@ -193,7 +193,7 @@ $html = <<<EOD
       <td class="item-d">
         <a href={$url} target=_blank class="prrrr"><img src={$img1}>{$name}</a>
       </td>
-      <td class="deka">{$sougou_gazo}<br>{$sougou}点</td>
+      <td class="deka"><span class="nosp">{$sougou_gazo}</span>{$sougou}点</td>
       <td><span class="hide">{$tousi1}</span>{$tousi1_txt}</td>
       <td><span class="hide">{$tousi2}</span>{$tousi2_txt}</td>
       <td><span class="hide">{$tousi3}</span>{$tousi3_txt}</td>

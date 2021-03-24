@@ -1,4 +1,4 @@
-<?php include 'header-new.php'; ?>
+<?php include 'header.php'; ?>
 
 <main>
 
@@ -13,7 +13,12 @@
         </div>
     <section class="text-box">
         <article>
-        <p><strong class="red">「初心者におすすめのネット証券は？」<br>「手数料が安いネット証券はどこ？」<br>「人気の証券会社が知りたい！」</strong></p>
+        <?php if(is_mobile()) : ?>
+        <p style="font-size: 1rem">
+        <?php else : ?>
+        <p style="font-size: 1.2rem">
+            <?php endif; ?>
+        <strong class="red">「初心者におすすめのネット証券は？」<br>「手数料が安いネット証券はどこ？」<br>「人気の証券会社が知りたい！」</strong></p>
         <br>
         <p>ネット証券は、<strong>圧倒的な手数料の安さ、便利で優秀な取引ツールが利用できる、PC・スマホでいつでも自分の好きなタイミングで売り買いの注文が出来る</strong>のが大きな魅力です。総合証券会社のように営業される心配も一切ありません。
         </p>
@@ -22,7 +27,7 @@
         </article>
     </section>
 
-    <?php include 'rankings/ranking-all.php'; ?>
+    <?php include 'rankings/ranking.php'; ?>
 
     <!-- <section id="pickup">
         <?php if(is_mobile()) : ?>

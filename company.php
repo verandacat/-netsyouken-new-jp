@@ -1,4 +1,4 @@
-<?php include 'header-new.php'; ?>
+<?php include 'header.php'; ?>
 <?php 
 include ('inc/ranking.php');
 include ('inc/reviews.php');
@@ -213,11 +213,11 @@ $names = array('sbi', 'matsui', 'rakuten', 'dmm', 'sbimobi', 'livestar', 'line',
         </table>
         <?php endif; ?>
 
-        <?php if (!empty($c['coment_top'])) : ?>
+        <?php if (!empty($reslutArray[$c]['comment_top'])) : ?>
         <div class="comment">
             <h4>ネット証券の窓口 編集部のコメント</h4>
             <p>
-            <?php echo $reslutArray[$c]['coment_top'] ?>
+            <?php echo $reslutArray[$c]['comment_top'] ?>
             </p>
         </div>
         <?php endif; ?>

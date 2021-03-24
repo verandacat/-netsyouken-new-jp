@@ -1,7 +1,7 @@
 <div class="ame-hikaku-box">
 
 
-    <h3 class="ame-hikaku-title"><i class="fas fa-check"></i>外国株におすすめ証券会社一括比較</h3>
+    <h3 class="hikaku-title"><i class="fas fa-check"></i>外国株におすすめ証券会社一括比較</h3>
     <h2 class="sp">→ 横にスクロールできます。</h2>
     <div class="scroll_div">
         <table class="r-table ame-hikaku-table">

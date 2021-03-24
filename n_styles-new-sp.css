@@ -185,7 +185,7 @@ main section.text-box {
     padding-bottom: 20px;
     border: 1px solid var(--ddgreen);
     border-bottom: 4px solid var(--ddgreen);
-    border-top: 4px solid var(--yellow);
+    border-top: 4px solid var(--ddgreen);
 }
 
 #ranking-area article .r-title h3 {
@@ -1558,7 +1558,7 @@ table.small-table td a {
 table.small-table td a.t-btn {
     border-radius: 5px;
     background: var(--btnColor);
-    box-shadow: 0 4px 0 #f96e6e;
+    box-shadow: 0px 2px 0 #c00707, inset 0px 2px 0px tomato;
     display: block;
     width: 98%;
     height: auto;

@@ -1,4 +1,4 @@
-<?php include 'header-new.php'; ?>
+<?php include 'header.php'; ?>
 
 <main class="sub-page">
     <div id="siteNavi"><a href="./">トップページ</a> ＞ スマホ証券人気ランキング</div>

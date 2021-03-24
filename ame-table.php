@@ -1,13 +1,13 @@
 <div class="ame-hikaku-box">
 
 
-    <h3 class="ame-hikaku-title"><i class="fas fa-check"></i>米国株におすすめ証券会社一括比較</h3>
+    <h3 class="hikaku-title"><i class="fas fa-check"></i>米国株におすすめ証券会社一括比較</h3>
     <h2 class="sp">→ 横にスクロールできます。</h2>
     <div class="scroll_div">
         <table class="r-table ame-hikaku-table">
             <thead>
                 <tr class="tablesorter-headerRow">
-                    <td class="koteitd">証券会社</td>
+                    <td class="koteitd nametd">証券会社</td>
                     <td>米国株取扱銘柄数</td>
                     <td>米国株手数料</td>
                     <td>米国株取引時間</td>
@@ -18,7 +18,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>
+                    <td class="item-d1">
                         <a href="./link/sbi.php" target="_blank" class="prrrr">SBI証券</a>
                         <a href="./link/sbi.php" target="_blank" class="prrrr">
                             <img src="./thumb/sbi120_60.gif" alt="">

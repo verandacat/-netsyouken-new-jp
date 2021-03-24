@@ -1,4 +1,4 @@
-<?php include 'header-new.php'; ?>
+<?php include 'header.php'; ?>
 
 <main class="sub-page">
     <div id="siteNavi"><a href="./">トップページ</a> ＞ 米国株投資におすすめの証券会社ランキング</div>

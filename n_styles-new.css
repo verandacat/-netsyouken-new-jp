@@ -438,13 +438,12 @@ h3.itemh3 a {
 
 .comment h4 {
     font-size: 16px;
-    /* background: var(--ddgreen); */
+    background: var(--ddgreen);
     padding: 8px 8px;
     min-height: 1.875em;
-    color: var(--ddgreen);
+    color: var(--white);
     /* border-radius: 14px 14px 0 0; */
     border-bottom: 4px solid var(--yellow);
-    border-top: 4px solid var(--yellow);
 }
 
 .comment h4 i {
@@ -1301,8 +1300,13 @@ table.small-table td {
     font-size: 14px;
 }
 
+table.small-table th p {
+    color: white;
+}
+
 table.small-table td p {
-    margin: 10px 0 !important;
+    margin: 10px 30px !important;
+    font-weight: bold;
 }
 
 table.small-table a img {
@@ -1319,8 +1323,8 @@ table.small-table td a {
 
 table.small-table td a.t-btn {
     border-radius: 5px;
-    background-color: #f28a9e;
-    box-shadow: 0 4px 0 #dc6a82;
+    background: var(--btnColor);
+    box-shadow: 0px 4px 0 #c00707, inset 0px 3px 0px tomato;
     display: block;
     width: 98%;
     height: auto;
