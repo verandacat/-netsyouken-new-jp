@@ -126,7 +126,11 @@ $imaurl = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
                                 <th>～100万円</th>
                             </tr>
                             <tr>
+                                <?php if($r['name'] == 'LINE証券') : ?>
+                                <td>売り注文時（買い注文は0円！）</td>
+                                <?php else : ?>
                                 <td>約定ごと</td>
+                                <?php endif; ?>
                                 <td><?php echo $r['tesuryou_1_1'] ?></td>
                                 <td><?php echo $r['tesuryou_1_2'] ?></td>
                                 <td><?php echo $r['tesuryou_1_3'] ?></td>
@@ -141,6 +145,9 @@ $imaurl = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
                             </tr>
                         </tbody>
                     </table>
+                    <?php if($r['name'] == 'LINE証券') : ?>
+                        <?php echo $r['tsyu']; ?>
+                    <?php endif; ?>
 
                     <?php if(!is_mobile()) : ?>
                     <table class="rank-table table-second">
@@ -205,8 +212,9 @@ $imaurl = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
                     </table>
                     <?php endif; ?>
                 </div>
+                
             </div>
-
+            
             <div class="po-list">
                 <h4><i class="fas fa-hand-point-right"></i><?php echo $r['name'] ?>のおすすめポイント</h4>
 

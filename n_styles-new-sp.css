@@ -472,7 +472,7 @@ main section.text-box {
     justify-content: center;
     padding: 5px;
     margin: 15px auto 0;
-    background: var(--lyellow);
+    background: var(--lgreen);
 }
 
 .osubox .osu-ctt {
@@ -581,6 +581,7 @@ main section.text-box {
     background: var(--btnColor);
     border: 2px solid #f96e6e;
     border-radius: 18px;
+    box-shadow: 0 4px darkred;
     width: 95%;
     height: 70px;
     margin: 0 auto;
@@ -761,7 +762,7 @@ main section.text-box {
 .kuchikomi-box {
     margin-top: 30px;
     padding: 10px;
-    background: var(--lgreen);
+    background: var(--lyellow);
 }
 
 
@@ -1174,7 +1175,7 @@ li.point5 {
 }
 
 #siteNavi a {
-    color: #4887d9;
+    color: var(--bgreen);
     font-weight: bold;
 }
 
@@ -1562,7 +1563,8 @@ table.small-table td {
 table.small-table td p {
     margin: 0 !important;
     /* font-size: 1rem; */
-    padding-bottom: 5px;
+    padding: 4px;
+    font-weight: bold;
     line-height: 1.4;
 }
 
@@ -1571,9 +1573,11 @@ table.small-table a img {
 }
 
 table.small-table td a {
-    color: #4887d9;
+    color: var(--dgreen);
     display: inline-block;
     text-decoration: underline;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 table.small-table td a.t-btn {

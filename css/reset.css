@@ -142,6 +142,9 @@ body {
 
 small {
     font-size: 10px;
+    line-height: 1.2;
+    display: block;
+    padding: 4px;
 }
 
 a {
@@ -208,11 +211,11 @@ table {
 }
 
 .bg-y {
-    background-image: linear-gradient(180deg, transparent 70%, #f1e39b 30%);
+    background-image: linear-gradient(180deg, transparent 70%, #fffa68 30%);
 }
 
 .y {
-    color: #ffe566;
+    color: #fffa68;
     font-weight: bold;
 }
 

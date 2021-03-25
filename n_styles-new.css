@@ -469,7 +469,7 @@ h3.itemh3 a {
     justify-content: center;
     width: 100%;
     margin: auto;
-    background: var(--lyellow);
+    background: var(--lgreen);
 }
 
 .osubox .osu-ctt {
@@ -568,6 +568,7 @@ h3.itemh3 a {
     width: 97%;
     height: 100px;
     margin: 0 auto;
+    box-shadow: 0 5px darkred;
     /* padding: 15px 30px; */
     text-align: center;
     font-size: 27px;
@@ -690,7 +691,7 @@ h3.itemh3 a {
 .kuchikomi-box {
     margin-top: 30px;
     padding: 20px 20px 20px;
-    background: var(--lgreen);
+    background: var(--lyellow);
 }
 
 .kuchikomi-box h4 {
@@ -698,7 +699,7 @@ h3.itemh3 a {
     padding: 8px 20px;
     font-size: 14px;
     margin-bottom: 0;
-    text-align: left;
+    text-align: center;
     background: var(--black);
 }
 
@@ -986,7 +987,7 @@ li.point5 {
 }
 
 #siteNavi a {
-    color: #4887d9;
+    color: var(--bgreen);
 }
 
 #review-box #review h3 {
@@ -1016,6 +1017,10 @@ li.point5 {
 .re-content div {
     padding: 8px 0 8px;
     position: relative;
+}
+
+.swiper-slide div {
+    padding: 24px 0 34px;
 }
 
 
@@ -1323,9 +1328,11 @@ table.small-table a img {
 }
 
 table.small-table td a {
-    color: #4887d9;
+    color: var(--dgreen);
     display: block;
     text-decoration: underline;
+    font-size: 1rem;
+    font-weight: bold;
     width: 100%;
     padding: 5px 10px;
 }

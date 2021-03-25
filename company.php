@@ -84,7 +84,11 @@ $names = array('sbi', 'matsui', 'rakuten', 'dmm', 'sbimobi', 'livestar', 'line',
                                 <th>～100万円</th>
                             </tr>
                             <tr>
+                                <?php if($reslutArray[$c]['name'] == 'LINE証券') : ?>
+                                <td>売り注文時（買い注文は0円！）</td>
+                                <?php else : ?>
                                 <td>約定ごと</td>
+                                <?php endif; ?>
                                 <td><?php echo $reslutArray[$c]['tesuryou_1_1'] ?></td>
                                 <td><?php echo $reslutArray[$c]['tesuryou_1_2'] ?></td>
                                 <td><?php echo $reslutArray[$c]['tesuryou_1_3'] ?></td>
@@ -99,6 +103,10 @@ $names = array('sbi', 'matsui', 'rakuten', 'dmm', 'sbimobi', 'livestar', 'line',
                             </tr>
                         </tbody>
                     </table>
+                    <?php if($reslutArray[$c]['name'] == 'LINE証券') : ?>
+                        <?php echo $reslutArray[$c]['tsyu']; ?>
+                    <?php endif; ?>
+
                     <?php if (!is_mobile()) : ?>
                     <table class="rank-table table-second">
                         <tbody>
@@ -174,7 +182,7 @@ $names = array('sbi', 'matsui', 'rakuten', 'dmm', 'sbimobi', 'livestar', 'line',
                     <li><?php echo $reslutArray[$c]['point1'] ?>
                     </li>
                     <li><?php echo $reslutArray[$c]['point2'] ?></li>
-                    <?php if (!empty($c['point3'])) : ?>
+                    <?php if (!empty($reslutArray[$c]['point3'])) : ?>
                     <li><?php echo $reslutArray[$c]['point3'] ?></li>
                     <?php endif; ?>
                 </ul>
@@ -296,7 +304,7 @@ $names = array('sbi', 'matsui', 'rakuten', 'dmm', 'sbimobi', 'livestar', 'line',
                     $reviewLoop = $reslutArray[$c]['reviews'];
                     foreach ($reviewLoop as $v => $key) {
                         ?>
-            <div class="re-content <?php echo $reviewLoop[$v]['sex']; ?> swiper-slide">
+            <div class="re-content <?php echo $reviewLoop[$v]['sex']; ?>">
             <?php if(is_mobile()) : ?>
             <img class="sp-star" src="<?php echo $reviewLoop[$v]['star']; ?>" alt="" />
             <?php endif; ?>

@@ -128,10 +128,12 @@ usort($reslutArray, 'user_compare_data');
                             </tr>
                         </tbody>
                     </table>
-                    <?php if($r['name']=='LINE証券') : ?>
-                    <small>※同一日に同一注文で複数の約定となった場合は、約定代金を合算し手数料を計算します。</small>
+                    <?php if($r['name'] == 'LINE証券') : ?>
+                        <?php echo $r['tsyu']; ?>
                     <?php endif; ?>
                     <?php endif; ?>
+
+                    
 
                     <?php if(!is_mobile()) : ?>
                     <?php if($r['name']!='PayPay証券') : ?>

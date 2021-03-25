@@ -35,10 +35,12 @@ $r_list = array(
         "point2" => '<span class="red bg-y">業界最安水準の手数料</span>の安さ！',
         "point3" => '国内株式個人売買代金シェアNo.1！',
         
-       
         "nisa_point1" => 'NISA<span class="red">口座開設数No.1</span>！',
         "nisa_point2" => 'NISA口座の<span class="bg-y red">国内株式売買手数料0円</span>！の安さ！',
         "nisa_point3" => '100円から積立がスタートできる！',
+        "tsumi_point1" => '100円から<span class="red">積立がスタートできる</span>!',
+        "tsumi_point2" => 'つみたてNISAの<span class="bg-y red">取扱銘柄163本</span>と豊富！',
+        "tsumi_point3" => 'つみたてNISAの買付手数料0円！',
         "invest_point1" => '取扱投資信託数は<span class="red">全2,660本！！</span>',
         "invest_point2" => '買付手数料は<span class="red bg-y">すべて無料！</span>',
         "invest_point3" => 'Tポイントで投資信託が買える！',
@@ -63,6 +65,12 @@ $r_list = array(
         "comment_nisa" => 'SBI証券は豊富な商品ラインナップや業界最低水準の手数料が魅力のネット証券会社です。<br><br>
         NISAで購入できるIPO(新規公開株)や投資信託などの取り扱い件数も業界No1水準です。<br><br>
         また、外国株の取り扱い市場も米国、香港など9カ国(2019年7月現在)と多いため、NISAでの外国株投資をお考えの方にもお勧めです。',
+         // Comment TSUMITATE
+         "comment_tsumi" => '
+         SBI証券はNISA口座開設数No.1のつみたてNISA口座に1番おすすめのネット証券会社です。<br><br>
+         つみたてNISAの投資信託取扱銘柄163本と幅広いラインナップに加え、100円から積立がスタートできますので、少額でコツコツ
+         投資をしたい方にピッタリ。<br><br>
+         積み立てタイミングは「毎日」「毎週」「毎月」の3つから自由に選べて、自動で積み立ててくれるので面倒な手間がかからないのも嬉しいポイントです。',
         // Comment 投資信託
         "comment_invest" => '最初におすすめするのがSBI証券です。SBI証券をおすすめする理由は、何といっても「信託報酬」が業界最安値水準である点です。
         <br><br>
@@ -117,7 +125,10 @@ $r_list = array(
         "name" => '松井証券',
         "pageUrl" => 'matsui',
         "url" => './link/matsui.php',
-        
+        "urlIpo" => '',
+        "urlNisa" => './link/matsui-nisa.php',
+        "urlAme" => '',
+
         "image" => './img/matsui200_200.gif',
         "imageIpo" => '',
         "imageNisa" => './img/matsui_nisa_200-200.gif',
@@ -140,8 +151,8 @@ $r_list = array(
 
         // ポイント
         "point1" => '1日の株式約定代金合計が<span class="red bg-y">50万円以下は手数料無料！</span>',
-        "point2" => 'カスタマーサービスは<span class="red ">8年連続三つ星獲得！</span>',
-        "point3" => '',
+        "point2" => 'カスタマーサービスは<span class="red ">10年連続三つ星獲得！</span>',
+        "point3" => '100円から積立できるロボアド「投信工房」！',
         "nisa_point1" => 'NISA口座の株式取引等の<span class="red bg-y">手数料0円！</span>',
         "nisa_point2" => '1日の株式約定代金合計が<span class="red">50万円以下は手数料無料！</span>',
         "nisa_point3" => 'カスタマーサービスは8年連続三つ星獲得！',
@@ -155,7 +166,7 @@ $r_list = array(
 
         // コメント
         // Comment TOP
-        "comment_top" => '松井証券は1日の約定代金の合計金額で手数料が決まる料金体系のみですが、現物取引、信用取引共に約定代金が50万円以下の場合手数料無料、 さらにヘルプデスク協会の問い合わせ窓口格付けで最高評価の三つ星を8年連続で獲得するなどお客様サポートが充実しているので、投資デビューに最適なネット証券です',
+        "comment_top" => '松井証券は1日の約定代金の合計金額で手数料が決まる料金体系のみですが、現物取引、信用取引共に約定代金が50万円以下の場合手数料無料、 さらにヘルプデスク協会の問い合わせ窓口格付けで最高評価の三つ星を10年連続で獲得するなどお客様サポートが充実しているので、投資デビューに最適なネット証券です。',
         // Comment 初心者
         "comment_fee" => '',
         // Comment IPO
@@ -166,6 +177,7 @@ $r_list = array(
         NISAでの日本株株式売買手数料は無料となっている点が魅力的です。そのほか一般の口座でも1日の現物株式取引の約定代金50万円までは無料となっており、少額投資を中心に考えている方にもお勧めできます。
         <br><br>
         投資信託の取引もAI(人工知能)を使ったロボアドバイザーが資産の配分を提案してくれるといったように情報サービスも充実しています。',
+        
         // Comment 投資信託
         "comment_invest" => '',
         // Comment 米国株
@@ -209,6 +221,10 @@ $r_list = array(
         "name" => '楽天証券',
         "pageUrl" => 'rakuten',
         "url" => './link/rakuten.php',
+        "urlIpo" => '',
+        "urlNisa" => './link/rakuten-nisa.php',
+        "urlAme" => '',
+
         "image" => './img/rakuten200_200.png',
         "imageIpo" => '',
         "imageNisa" => '',
@@ -233,9 +249,9 @@ $r_list = array(
         "point1" => '手数料が<span class="red bg-y">業界最安クラス！</span>',
         "point2" => '取引ツール「マーケットスピード」が<span class="red">超優秀！</span>',
         "point3" => '',
-        "nisa_point1" => '',
-        "nisa_point2" => '',
-        "nisa_point3" => '',
+        "nisa_point1" => '手数料が<span class="red bg-y">業界最安クラス！</span>',
+        "nisa_point2" => '取引ツール「マーケットスピード」が<span class="red">超優秀！</span>',
+        "nisa_point3" => '<span class="red">楽天ポイントを使って</span>投資ができる！',
         "invest_point1" => '',
         "invest_point2" => '',
         "invest_point3" => '',
@@ -637,6 +653,8 @@ $r_list = array(
         "tesuryou_2_2" => '-',
         "tesuryou_2_3" => '-',
         "tesuryou_2_4" => '-',
+
+        "tsyu" => '<small>※同一日に同一注文で複数の約定となった場合は、約定代金を合算し手数料を計算します。</small>',
 
         // 米国株表
         "ameTes_1_1" => '',

@@ -111,7 +111,11 @@ foreach ($reslutArray as $r ) {
                                 <th>～100万円</th>
                             </tr>
                             <tr>
+                                <?php if($r['name'] == 'LINE証券') : ?>
+                                <td>売り注文時（買い注文は0円！）</td>
+                                <?php else : ?>
                                 <td>約定ごと</td>
+                                <?php endif; ?>
                                 <td><?php echo $r['tesuryou_1_1'] ?></td>
                                 <td><?php echo $r['tesuryou_1_2'] ?></td>
                                 <td><?php echo $r['tesuryou_1_3'] ?></td>
@@ -126,6 +130,10 @@ foreach ($reslutArray as $r ) {
                             </tr>
                         </tbody>
                     </table>
+                    <?php if($r['name'] == 'LINE証券') : ?>
+                        <?php echo $r['tsyu']; ?>
+                    <?php endif; ?>
+                    
 
                     <?php if(!is_mobile()) : ?>
                     <table class="rank-table table-second">

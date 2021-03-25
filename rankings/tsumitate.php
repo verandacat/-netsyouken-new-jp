@@ -50,25 +50,14 @@ foreach ($reslutArray as $r) {
             <div class="r-title">
                 <img class="badge" src="./img/badge-<?php echo $r['rankNisa']; ?>-pc.png" alt="">
 
-                <?php if($r['name'] == 'SBIネオトレード証券') : ?>
-                    <?php if(is_mobile()) : ?>
-                    <h3 class="livestar">
-                        <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
-                        <small>（旧：ライブスター証券）</small>
-                    <?php else : ?>
-                        <h3 style="display:flex; flex-direction:column; ">
-                            <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
-                            <small style="padding-left: 90px;">（旧：ライブスター証券）</small>
-                    <?php endif; ?>
-                    </h3>
-                <?php else : ?>
+                <h3>
                     <?php if(!empty($r['urlNisa'])) : ?>
                     <a href="<?php echo $r['urlNisa'] ?>" target="_blank" class="prrrr">
                         <?php else : ?>
                         <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr">
                             <?php endif; ?>
                             <?php echo $r['name'] ?></a>
-                <?php endif; ?>
+                </h3>
 
                 <div class="number-box flex">
                     <?php if(is_mobile()) : ?>
@@ -200,7 +189,16 @@ foreach ($reslutArray as $r) {
                 <h4><i class="fas fa-hand-point-right"></i><?php echo $r['name'] ?>のおすすめポイント</h4>
 
                 <ul>
-                    <?php if(!empty($r['nisa_point1'])) : ?>
+                    <?php if(!empty($r['tsumi_point1'])) : ?>
+                    <li><?php echo $r['tsumi_point1'] ?></span>
+                    </li>
+                    <li><?php echo $r['tsumi_point2'] ?></li>
+
+                    <?php if(!empty($r['tsumi_point3'])) : ?>
+                    <li><?php echo $r['tsumi_point3'] ?></li>
+                    <?php endif; ?>
+
+                    <?php elseif(!empty($r['nisa_point1'])) : ?>
                     <li><?php echo $r['nisa_point1'] ?></span>
                     </li>
                     <li><?php echo $r['nisa_point2'] ?></li>
@@ -289,7 +287,9 @@ foreach ($reslutArray as $r) {
             <?php if(!empty($r['comment_top'])) : ?>
             <div class="comment">
                 <h4><i class="fas fa-comment-alt"></i>ネット証券の窓口 編集部のコメント</h4>
-                <?php if(!empty($r['comment_nisa'])) : ?>
+                <?php if(!empty($r['comment_tsumi'])) : ?>
+                <p><?php echo $r['comment_tsumi'] ?></p>
+                <?php elseif(!empty($r['comment_nisa'])) : ?>
                 <p><?php echo $r['comment_nisa'] ?></p>
                 <?php else : ?>
                 <p><?php echo $r['comment_top'] ?></p>
