@@ -28,9 +28,9 @@ usort($reslutArray, 'user_compare_data');
 <section id="ranking-area" class="">
     <div class="ranking-title">
         <?php if(is_mobile()) : ?>
-        <h2>IPOにおすすめの<br>証券会社ベスト<?php echo $count; ?>！</h2>
+        <h2><span style="font-size: 14px;">業界最安水準の手数料の</span><br>証券会社ベスト<?php echo $count; ?>を発表！</h2>
         <?php else : ?>
-        <h2>IPOにおすすめの証券会社ベスト<?php echo $count; ?>！</h2>
+        <h2>業界最安水準の手数料の<br>証券会社ベスト<?php echo $count; ?>を発表！</h2>
         <?php endif; ?>
     </div>
 
@@ -45,8 +45,6 @@ usort($reslutArray, 'user_compare_data');
     
     ?>
     <?php if($i <= 3) : ?>
-    <?php  $i++; ?>
-
     <article class="rank-0<?php echo $r['rankFee']; ?>" data-rank="<?php echo $r['rankFee']; ?>">
         <?php else : ?>
         <article class="rank-0<?php echo $r['rankFee']; ?>" data-rank="4">
@@ -54,12 +52,26 @@ usort($reslutArray, 'user_compare_data');
             <div class="r-title">
                 <img class="badge" src="./img/badge-<?php echo $r['rankFee']; ?>-pc.png" alt="">
 
-                <h3>
-                   
-                        <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr">
-                            <?php echo $r['name'] ?>
-                            </a>
-                </h3>
+                <?php if($r['name'] == 'SBIネオトレード証券') : ?>
+                    
+                    <?php if(is_mobile()) : ?>
+                    <h3 class="livestar">
+                        <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
+                        <small>（旧：ライブスター証券）</small>
+                        <?php else : ?>
+                        <h3 style="display:flex; flex-direction:column; ">
+                            <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
+                            <small style="padding-left: 90px;">（旧：ライブスター証券）</small>
+                            <?php endif; ?>
+                        </h3>
+                        <?php else : ?>
+    
+                           
+                        <h3 style="display:flex; flex-direction:column; ">
+                            <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
+                        </h3>
+                            
+                        <?php endif; ?>
 
                 <div class="number-box flex">
                     <?php if(is_mobile()) : ?>
@@ -340,6 +352,7 @@ usort($reslutArray, 'user_compare_data');
 
         </article>
         <?php
+        $i++;
     }
 
 ?>

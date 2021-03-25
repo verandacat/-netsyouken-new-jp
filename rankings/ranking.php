@@ -32,7 +32,7 @@ $imaurl = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
         }
     }
     ?>
-    <?php if(!strpos($imaurl, 'ranking')) : ?>
+    <?php //if(!strpos($imaurl, 'ranking')) : ?>
     <div class="ranking-title">
         <?php if(is_mobile()) : ?>
         <h2>ネット証券人気ランキング<br>ベスト<?php echo $count; ?>を発表！<br>
@@ -46,7 +46,7 @@ $imaurl = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
         </h2>
         <?php endif; ?>
     </div>
-    <?php endif; ?>
+    <?php //endif; ?>
     <?php
         $i=0; 
     foreach ($reslutArray as $r) { 
@@ -57,9 +57,9 @@ $imaurl = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
         } 
     ?>
     <?php if($i <= 3) : ?>
-        <?php  $i++; ?>
+    <?php  $i++; ?>
 
-        <article class="rank-0<?php echo $r['rankAll']; ?>" data-rank="<?php echo $r['rankAll']; ?>">
+    <article class="rank-0<?php echo $r['rankAll']; ?>" data-rank="<?php echo $r['rankAll']; ?>">
         <?php else : ?>
         <article class="rank-0<?php echo $r['rankAll']; ?>" data-rank="4">
             <?php endif; ?>
@@ -67,6 +67,7 @@ $imaurl = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
                 <img class="badge" src="./img/badge-<?php echo $r['rankAll']; ?>-pc.png" alt="">
 
                 <?php if($r['name'] == 'SBIネオトレード証券') : ?>
+
                 <?php if(is_mobile()) : ?>
                 <h3 class="livestar">
                     <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
@@ -74,12 +75,16 @@ $imaurl = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
                     <?php else : ?>
                     <h3 style="display:flex; flex-direction:column; ">
                         <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
+                        <small style="padding-left: 90px;">（旧：ライブスター証券）</small>
                         <?php endif; ?>
                     </h3>
                     <?php else : ?>
 
-                    <h3><a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
+
+                    <h3 style="display:flex; flex-direction:column; ">
+                        <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
                     </h3>
+
                     <?php endif; ?>
 
                     <div class="number-box flex">
@@ -340,12 +345,12 @@ $imaurl = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
                     <div class="swiper-button-next"></div>
 
                 </div>
-                </div>
-                <div class="button-box">
-                    <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr">
-                        <img src="<?php echo $r['btnLogo'] ?>" alt="">無料口座開設はこちら
-                    </a>
-                </div>
+            </div>
+            <div class="button-box">
+                <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr">
+                    <img src="<?php echo $r['btnLogo'] ?>" alt="">無料口座開設はこちら
+                </a>
+            </div>
 
 
         </article>

@@ -5,7 +5,12 @@
     <img src="./img/rank-ame-bn.jpg" width="100%" alt="米国株投資ランキング" />
 
     <section class="text-box">
-        <p><strong style="color:red">「米国株が買える証券会社は？？」<br>「米国株の取引手数料が安いのはどこ？」</strong></p>
+    <?php if(is_mobile()) : ?>
+        <p style="font-size: 1rem">
+        <?php else : ?>
+        <p style="font-size: 1.2rem">
+            <?php endif; ?>
+        <strong class="red">「米国株が買える証券会社は？？」<br>「米国株の取引手数料が安いのはどこ？」</strong></p>
         <br>
         <p>米国株は1株から買えて、夜間でも取引ができ、また年4回の配当があったりと日本株とは違った特徴があります。米国株の取引には、米国株の取り扱いがある証券会社の口座開設が必要です。</p>
         <br>

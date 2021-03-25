@@ -6,13 +6,18 @@
 
     <section class="sub-text-box">
         <p>
-        <span class="red">「業界最安水準の手数料で取引したい！」<br>
+        <?php if(is_mobile()) : ?>
+        <span class="red" style="font-size: 1rem">
+        <?php else : ?>
+        <span class="red" style="font-size: 1.2rem">
+            <?php endif; ?>
+        「業界最安水準の手数料で取引したい！」<br>
         「少しでも収益性を上げたい！」</span>
         <br><br>
         このようにお考えの方は、手数料が出来る限り安いネット証券で取引したいものですよね。手数料は主に株式取引の約定ごとの手数料と１日定額の手数料の２種類に分かれます。また取引金額によっても手数料が変わります。
         <br><br>
         このページでは<span class="red bg-y">総合的に手数料を比較して手数料が安いおすすめのネット証券</span>をランキングでご紹介します。
-        </p>    
+        </span>    
     </section>
 
     <?php include 'rankings/fee.php'; ?>

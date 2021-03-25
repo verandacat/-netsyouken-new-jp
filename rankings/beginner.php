@@ -43,7 +43,7 @@ usort($reslutArray, 'user_compare_data');
     <?php 
 $i = 0;
 foreach ($reslutArray as $r ) {
-    $i++;
+    
     if($r['rankBeg'] == '') {
         unset($r);
         continue;
@@ -57,7 +57,22 @@ foreach ($reslutArray as $r ) {
             <div class="r-title">
                 <img class="badge" src="./img/badge-<?php echo $r['rankBeg']; ?>-pc.png" alt="">
 
-                <h3><a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a></h3>
+                <?php if($r['name'] == 'SBIネオトレード証券') : ?>
+                    <?php if(is_mobile()) : ?>
+                    <h3 class="livestar">
+                        <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
+                        <small>（旧：ライブスター証券）</small>
+                    <?php else : ?>
+                        <h3 style="display:flex; flex-direction:column; ">
+                            <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
+                            <small style="padding-left: 90px;">（旧：ライブスター証券）</small>
+                    <?php endif; ?>
+                    </h3>
+                <?php else : ?>
+                    <h3 style="display:flex; flex-direction:column; ">
+                        <a href="<?php echo $r['url'] ?>" target="_blank" class="prrrr"><?php echo $r['name'] ?></a>
+                    </h3>
+                <?php endif; ?>
 
                 <div class="number-box flex">
                     <?php if(is_mobile()) : ?>
@@ -330,7 +345,8 @@ foreach ($reslutArray as $r ) {
 
 
         <?php
-    }
+    $i++;
+}
 
 ?>
 </section>

@@ -7,8 +7,8 @@
     <section class="nisa-merit-box">
         <h3 class="nisa-merit-title">NISA口座のメリットとは？</h3>
         <ul class="nisa-merit-list">
-            <li>投資で得た利益の<span class="bg-y bold" style="color: #d43414;">税金20%→0%！</span></li>
-            <li>ネット証券で<span class="bg-y bold" style="color: #d43414;">取引手数料無料！</span></li>
+            <li>投資で得た利益の<span class="bg-y bold" style="color: var(--bgreen);">税金20%→0%！</span></li>
+            <li>ネット証券で<span class="bg-y bold" style="color: var(--bgreen);">取引手数料無料！</span></li>
             <li>NISA or つみたてNISAを選べる！</li>
         </ul>
         <p class="icon-box"><i class="fas fa-long-arrow-alt-down fa"></i></p>

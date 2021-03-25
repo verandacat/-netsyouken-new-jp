@@ -142,7 +142,7 @@
                     <td>
                         <a href="./link/dmm.php" target="_blank" class="prrrr">DMM 株</a>
                         <a href="./link/dmm.php" target="_blank" class="prrrr">
-                            <img src="./thumb/noimg.jpg" alt="">
+                            <img src="./thumb/Adbnr_120_60.png" alt="">
                         </a>
                         <a href="./link/dmm.php" target="_blank" class="prrrr btn">無料口座開設</a>
                     </td>

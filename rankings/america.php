@@ -37,7 +37,6 @@ usort($reslutArray, 'user_compare_data');
     $i = 0;
 
     foreach ($reslutArray as &$r) {
-        $i++;
         if($r['rankAme'] == '') {
             unset($r);
             continue;
@@ -204,6 +203,8 @@ usort($reslutArray, 'user_compare_data');
 
 
         <?php
+        $i++;
+
     }
 
 ?>

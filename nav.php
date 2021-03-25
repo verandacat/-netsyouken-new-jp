@@ -10,9 +10,7 @@
 
     <section>
         <div id="nav-mokuteki" class="nav-list">
-            <h2><span>目的別おすすめ証券会社</span></h2>
-              
-            
+            <h2><i class="fas fa-caret-square-right"></i><span>目的別おすすめ証券会社</span></h2>
             <ul>
             <?php
             $i = 0;
@@ -40,7 +38,7 @@
         include ('inc/data-columns.php');
     ?>
         <div id="nav-ranking" class="nav-list">
-            <h2><span>人気の証券会社</span></h2>
+            <h2><i class="fas fa-caret-square-right"></i><span>人気の証券会社</span></h2>
             <ul>
                 <?php $i = 0;
                 foreach($r_list as $r) : 
@@ -58,7 +56,7 @@
     </section>
     <section>
         <div id="nav-review" class="nav-list">
-            <h2><span>人気の証券会社の口コミ</span></h2>
+            <h2><i class="fas fa-caret-square-right"></i><span>人気の証券会社の口コミ</span></h2>
             <ul>
                 <?php $i = 0;
                 foreach($r_list as $r) : 
@@ -74,8 +72,8 @@
         </div>
     </section>
     <section>
-        <div>
-            <h2><span>株コラム</span></h2>
+        <div id="nav-column" class="nav-list">
+            <h2><i class="fas fa-caret-square-right"></i><span>株コラム</span></h2>
             <ul>
                 <?php 
                 $i = 0;

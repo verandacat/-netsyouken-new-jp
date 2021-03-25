@@ -211,7 +211,7 @@ $html = <<<EOD
 EOD;
     
     		 if (strpos($imaurl, 'result') !== false) {
-                include ('/search.php');
+                include ('search.php');
               }else{
                 echo $html;
               }

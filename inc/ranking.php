@@ -130,7 +130,7 @@ $r_list = array(
         // ランキング順位
         "rankAll" => 2,
         "rankBeg" => 1,
-        "rankFee" => 6,
+        "rankFee" => 5,
         "rankIpo" => '',
         "rankNisa" => 3,
         "rankInvest" => '',
@@ -1510,8 +1510,8 @@ $r_list = array(
 
         // ランキング順位
         "rankAll" => '',
-        "rankBeg" => '',
-        "rankFee" => 5,
+        "rankBeg" => 5,
+        "rankFee" => '',
         "rankIpo" => '',
         "rankNisa" => '',
         "rankInvest" => '',
